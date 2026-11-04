@@ -2,7 +2,7 @@
 
 * **Dự án:** Ước Lượng Mật Độ & Đếm Đám Đông (Crowd Counting & Density Map Estimation)
 * **Kế thừa & Thử nghiệm trên mô hình:** CSRNet (CVPR 2018)
-* **Người thực hiện:** Trịnh Minh Quân - Kỹ sư Dữ liệu (Data Engineer)
+* **Người thực hiện:** Trịnh Minh Quân
 * **Ngày hoàn thành:** 04/11/2026
 
 ---
@@ -105,7 +105,7 @@ Khoảng cách giữa các đầu người tỷ lệ thuận với kích thướ
 
 ---
 
-## 6. KHUYẾN NGHỊ BÀN GIAO CHO KỸ SƯ HUẤN LUYỆN (GỬI BẠN NGUYỄN THANH NAM)
+## 6. KHUYẾN NGHỊ BÀN GIAO CHO KỸ SƯ HUẤN LUYỆN
 
 1. **Về Hàm Mất Mát (Loss Function):**
    * Do ground truth density map được nhân hệ số 64, nên tổng loss theo pixel sẽ khá lớn. Bắt buộc cấu hình `nn.MSELoss(reduction='sum')` và đặt **Learning Rate cực nhỏ** ($10^{-7}$) kết hợp SGD momentum 0.95 để tránh hiện tượng bùng nổ gradient (`loss: nan`).
