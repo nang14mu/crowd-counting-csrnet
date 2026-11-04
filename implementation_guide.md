@@ -1,5 +1,8 @@
 # HƯỚNG DẪN CÀI ĐẶT & CHẠY PIPELINE DỮ LIỆU
 
+Link tải dataset: https://www.kaggle.com/datasets/tthien/shanghaitech
+_(Cài và giải nén vào folder của mình)_
+
 ---
 
 ### Bước 1: Cài đặt thư viện cần thiết
