@@ -60,3 +60,5 @@ desktop.ini
 
 agents/
 prompts/
+
+part_*.json
