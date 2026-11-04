@@ -1,0 +1,33 @@
+{
+  "project": "Crowd Counting Density Estimation",
+  "baseline_paper": "CSRNet (CVPR 2018)",
+  "metrics": [
+    {
+      "name": "MAE",
+      "description": "Mean Absolute Error across all evaluation images",
+      "direction": "lower_is_better",
+      "formula": "mean(abs(gt_count - pred_count))"
+    },
+    {
+      "name": "MSE",
+      "description": "Root Mean Squared Error measuring sensitivity to large outliers",
+      "direction": "lower_is_better",
+      "formula": "sqrt(mean((gt_count - pred_count)^2))"
+    }
+  ],
+  "benchmarks": {
+    "shanghaitech_part_a": {
+      "target_mae": 68.0,
+      "target_mse": 115.0,
+      "scene_type": "highly_congested",
+      "gaussian_method": "geometry_adaptive_knn"
+    },
+    "shanghaitech_part_b": {
+      "target_mae": 11.5,
+      "target_mse": 18.0,
+      "scene_type": "sparse_urban",
+      "gaussian_method": "fixed_sigma_15"
+    }
+  }
+}
+
