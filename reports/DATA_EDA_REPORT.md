@@ -129,7 +129,7 @@ Khoảng cách giữa các đầu người tỷ lệ thuận với kích thướ
 
 ---
 
-## 6. KHUYẾN NGHỊ BÀN GIAO CHO KỸ SƯ HUẤN LUYỆN (GỬI BẠN NGUYỄN THANH NAM)
+## 6. KHUYẾN NGHỊ BÀN GIAO CHO KỸ SƯ HUẤN LUYỆN
 
 1. **Về Hàm Mất Mát (Loss Function):**
    - Do ground truth density map được nhân hệ số 64, nên tổng loss theo pixel sẽ khá lớn. Bắt buộc cấu hình `nn.MSELoss(reduction='sum')` và đặt **Learning Rate cực nhỏ** ($10^{-7}$) kết hợp SGD momentum 0.95 để tránh hiện tượng bùng nổ gradient (`loss: nan`).
